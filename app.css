@@ -1,0 +1,119 @@
+/* Your styles should be mobile-first and responsive */
+
+/** 
+  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
+  *
+  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
+  *
+*/
+
+
+body {
+  width: 100%;
+  margin: auto;
+  background-color: #175a38;
+  color: #FFFFFF;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+div {
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+img {
+  width: 100%;
+  border: 1px solid #F4FFD6;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.submit {
+  background-color: #f1eeee;
+  color: #1D1905;
+  font-family: monospace;
+  font-weight: bold;
+  border-radius: 10px;
+  margin: 50px 106px;
+  padding: 50px
+}
+
+.options-list input {
+  border: none;
+  display: flex;
+  margin: 10px;
+  padding: 5px;
+}
+
+input[type='radio'] {
+  margin: auto;
+}
+
+
+label {
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-size: 30px;
+}
+
+label:hover {
+  color: greenyellow;
+}
+
+
+/* Groups & Items  (Mobile First) */
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.item {
+  flex: 1;
+  margin: 5px;
+}
+
+.item-double {
+  flex: 3;
+  margin: 5px;
+}
+
+/* Groups & Items  (Desktop) */
+
+@media all and (min-width: 800px) {
+  body {
+    width: 800px;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .group {
+    flex-direction: column;
+  }
+
+  div {
+    width: 600px;
+    margin: 0 auto;
+
+    padding: 75px 10px;
+  }
+}
+
+/*inline-flex */
+.options-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+
+.options {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
